@@ -52,7 +52,7 @@
 /* #undef DOUBLE_SLASH_IS_DISTINCT_ROOT */
 
 /* Define if struct dirent has a member d_ino that actually works. */
-/* #undef D_INO_IN_DIRENT */
+#define D_INO_IN_DIRENT 1
 
 /* Define to one if you want encryption. */
 /* #undef ENCRYPTION */
@@ -1202,7 +1202,7 @@
 
 /* Define to 1 if getcwd minimally works, that is, its result can be trusted
    when it succeeds. */
-/* #undef HAVE_MINIMALLY_WORKING_GETCWD */
+#define HAVE_MINIMALLY_WORKING_GETCWD 1
 
 /* Define to 1 if you have the <minix/config.h> header file. */
 /* #undef HAVE_MINIX_CONFIG_H */
@@ -1453,7 +1453,7 @@
 #define HAVE_STDIO_EXT_H 1
 
 /* Define to 1 if you have the <stdio.h> header file. */
-#define HAVE_STDIO_H 1
+/* #undef HAVE_STDIO_H */
 
 /* Define to 1 if you have the <stdlib.h> header file. */
 #define HAVE_STDLIB_H 1
@@ -2110,7 +2110,7 @@
 #define PACKAGE_TARNAME "inetutils"
 
 /* Define to the home page for this package. */
-#define PACKAGE_URL "https://www.gnu.org/software/inetutils/"
+#define PACKAGE_URL "http://www.gnu.org/software/inetutils/"
 
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "2.0"
